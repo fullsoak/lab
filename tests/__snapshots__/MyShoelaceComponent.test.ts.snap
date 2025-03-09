@@ -1,0 +1,39 @@
+export const snapshot = {};
+
+snapshot[`MyComponent 1`] = `
+'<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0"/><script type="importmap">{
+    "imports": {
+      "preact": "https://esm.sh/preact@10.26.4",
+      "preact/hooks": "https://esm.sh/preact@10.26.4/hooks",
+      "preact/debug": "https://esm.sh/preact@10.26.4/debug",
+      "preact/devtools": "https://esm.sh/preact@10.26.4/devtools",
+      "react": "https://esm.sh/preact@10.26.4",
+      "react/jsx-runtime": "https://esm.sh/preact@10.26.4/jsx-runtime",
+      "preact/jsx-runtime": "https://esm.sh/preact@10.26.4/jsx-runtime",
+      "react-dom": "https://esm.sh/preact@10.26.4/compat/",
+      "react-dom/*": "https://esm.sh/preact@10.26.4/compat/*",
+      "htm/preact": "https://esm.sh/htm@3.1.1/preact?external=preact",
+      "preact-iso": "https://esm.sh/preact-iso@^2.9.1?external=preact",
+      "preact-iso/prerender": "/fullsoak",
+      "@preact/signals": "https://esm.sh/@preact/signals",
+      "fullsoak/preact-iso": "https://esm.sh/preact-iso@^2.9.1?external=preact",
+      "@fullsoak/fullsoak/preact-iso": "https://esm.sh/preact-iso@^2.9.1?external=preact",
+      "fullsoak": "/fullsoak",
+      "@fullsoak/fullsoak": "/fullsoak"
+    }
+  }</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/themes/light.css"/><script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/shoelace-autoloader.js"></script><link rel="modulepreload" href="/components/MyShoelaceComponent/mount" as="script" type="text/javascript"/><link rel="modulepreload" href="/components/MyShoelaceComponent/index.tsx" as="script" type="text/javascript"/><script type="text/javascript"></script><style>@import url(/components/Shared/styles.css);section{padding:1em}sl-card img{width:300px;height:200px}</style></head><body><main id="fullsoak-htmlshell-main"><section><sl-card class="card-overview"><img slot="image" src="https://unsplash.com/photos/yMkJtHu2GDI/download?ixid=M3wxMjA3fDB8MXxhbGx8MTQxfHx8fHx8fHwxNzQxNDg5MjIxfA&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=80" alt="Everything you need for a great trip to Yosemite"><strong>Yosemite</strong><br>The journey is worth the lifetime experience. You are awaited!<br><small>polaroid not included</small><div slot="footer"><sl-button variant="primary" pill>Book now</sl-button><sl-rating></sl-rating></div></sl-card><style>
+  .card-overview {
+    max-width: 300px;
+  }
+
+  .card-overview small {
+    color: var(--sl-color-neutral-500);
+  }
+
+  .card-overview [slot=&quot;footer&quot;] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+</style></section></main><script type="text/javascript">window.preloadedProps = {}</script><script defer type="module" src="/components/MyShoelaceComponent/mount"></script></body></html>'
+`;

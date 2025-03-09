@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "preact";
+import type { SlButton, SlCard, SlRating } from "@shoelace-style/shoelace";
 
 const css = `
   .card-overview {
@@ -17,12 +18,15 @@ const css = `
 `;
 
 // https://stackoverflow.com/questions/61015445/using-web-components-within-preact-and-typescript
-declare module "preact" {
+declare module "preact/jsx-runtime" {
   namespace JSX {
     interface IntrinsicElements {
-      "sl-card": any;
-      "sl-button": any;
-      "sl-rating": any;
+      "sl-card": HTMLAttributes<SlCard>;
+      "sl-button": HTMLAttributes<SlButton> & {
+        variant: string;
+        pill: boolean;
+      };
+      "sl-rating": HTMLAttributes<SlRating>;
     }
   }
 }
