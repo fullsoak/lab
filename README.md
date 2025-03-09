@@ -1,4 +1,4 @@
-# fullsoak examples on Deno
+# fullsoak alpha examples on Deno
 
 FullSoak is a no-build TypeScript fullstack SSR-first framework. This repo hosts
 several examples using FullSoak.

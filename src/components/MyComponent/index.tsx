@@ -34,13 +34,16 @@ export const MyComponent: FunctionComponent<MyProps> = ({ foo }) => {
           <li>
             <a href="/app">Route Aware App Component</a>
           </li>
+          <li>
+            <a href="/lab">Alpha Stuff &amp; Bleeding Edges</a>
+          </li>
         </ul>
       </section>
       <MyOtherComponent baz={count} />
       <footer>
         <span>source code of this website:</span>{" "}
-        <a href="https://github.com/fullsoak/deno-examples">
-          https://github.com/fullsoak/deno-examples
+        <a href="https://github.com/fullsoak/lab">
+          https://github.com/fullsoak/lab
         </a>
       </footer>
     </>

@@ -9,6 +9,7 @@ import {
 import { makeHat } from "fullsoak/batteries";
 import { MyComponent } from "./components/MyComponent/index.tsx";
 import { MyRouteAwareComponent } from "./components/MyRouteAwareComponent/index.tsx";
+import { ShoelaceExampleController } from "./controllers/ShoelaceExample.ts";
 
 setupDefaultFullsoakLogger();
 
@@ -34,6 +35,6 @@ const port = Number(Deno.env.get("PORT") || 0) ?? 3991;
 
 useFullSoak({
   port,
-  controllers: [MyController],
+  controllers: [MyController, ShoelaceExampleController],
   componentsDir: GLOBAL_COMPONENTS_DIR,
 });

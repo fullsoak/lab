@@ -1,10 +1,13 @@
 {
   "imports": {
-    "fullsoak": "jsr:@fullsoak/fullsoak@0.16.2",
+    "fullsoak": "jsr:@fullsoak/fullsoak@0.17.0-alpha.3",
     "preact": "npm:preact@10.26.4",
-    "preact-iso": "npm:preact-iso@2.9.0",
+    "preact-iso": "npm:preact-iso@2.9.1",
     "@std/testing": "jsr:@std/testing@^1.0.9",
-    "superoak": "https://deno.land/x/superoak@4.8.1/mod.ts"
+    "superoak": "https://deno.land/x/superoak@4.8.1/mod.ts",
+    "@shoelace-style/shoelace": "npm:@shoelace-style/shoelace@2.20.0",
+    "react": "npm:preact@10.26.4/compat/",
+    "react-dom": "npm:preact@10.26.4/compat/"
   },
   "nodeModulesDir": "auto",
   "compilerOptions": {

@@ -1,0 +1,10 @@
+@import url("/components/Shared/styles.css");
+
+section {
+  padding: 1em;
+}
+
+sl-card img {
+  width: 300px;
+  height: 200px;
+}
