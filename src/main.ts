@@ -9,7 +9,7 @@ import {
 import { makeHat } from "fullsoak/batteries";
 import { MyComponent } from "./components/MyComponent/index.tsx";
 import { MyRouteAwareComponent } from "./components/MyRouteAwareComponent/index.tsx";
-import { ShoelaceExampleController } from "./controllers/ShoelaceExample.ts";
+import { ShoelaceExampleController } from "./controllers/ShoelaceExampleController.ts";
 
 setupDefaultFullsoakLogger();
 
