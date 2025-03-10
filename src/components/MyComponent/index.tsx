@@ -41,10 +41,12 @@ export const MyComponent: FunctionComponent<MyProps> = ({ foo }) => {
       </section>
       <MyOtherComponent baz={count} />
       <footer>
-        <span>source code of this website:</span>{" "}
-        <a href="https://github.com/fullsoak/lab">
-          https://github.com/fullsoak/lab
-        </a>
+        <div>
+          <span>source code of this website:</span>{" "}
+          <a href="https://github.com/fullsoak/lab">
+            https://github.com/fullsoak/lab
+          </a>
+        </div>
       </footer>
     </>
   );

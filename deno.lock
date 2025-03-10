@@ -2,7 +2,7 @@
   "version": "4",
   "specifiers": {
     "jsr:@dklab/oak-routing-ctrl@~0.14.2": "0.14.2",
-    "jsr:@fullsoak/fullsoak@0.17.0-alpha.3": "0.17.0-alpha.3",
+    "jsr:@fullsoak/fullsoak@0.17.0": "0.17.0",
     "jsr:@oak/commons@1": "1.0.0",
     "jsr:@oak/oak@^17.1.4": "17.1.4",
     "jsr:@std/assert@1": "1.0.11",
@@ -47,8 +47,8 @@
         "npm:zod"
       ]
     },
-    "@fullsoak/fullsoak@0.17.0-alpha.3": {
-      "integrity": "d5f032a9b8516ee9c91fc95ed84e861ef759814001d76d6a29637159345e2c18",
+    "@fullsoak/fullsoak@0.17.0": {
+      "integrity": "321170a0016b8be3c463b490a83c09a639cf9d73742e5a77e04077c56f192b34",
       "dependencies": [
         "jsr:@dklab/oak-routing-ctrl",
         "jsr:@oak/oak",
@@ -57,6 +57,7 @@
         "npm:@swc/core",
         "npm:clean-css",
         "npm:htm",
+        "npm:preact",
         "npm:preact-render-to-string",
         "npm:typescript",
         "npm:uglify-js"
@@ -466,7 +467,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@fullsoak/fullsoak@0.17.0-alpha.3",
+      "jsr:@fullsoak/fullsoak@0.17.0",
       "jsr:@std/testing@^1.0.9",
       "npm:@shoelace-style/shoelace@2.20.0",
       "npm:preact-iso@2.9.1",

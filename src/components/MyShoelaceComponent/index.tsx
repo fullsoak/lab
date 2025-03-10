@@ -1,5 +1,7 @@
 import type { FunctionComponent } from "preact";
 import type { SlButton, SlCard, SlRating } from "@shoelace-style/shoelace";
+import { get1stPropAt, getDescAt, getNameAt } from "./texts.ts";
+import { useEffect } from "preact/hooks";
 
 const css = `
   .card-overview {
@@ -31,26 +33,94 @@ declare module "preact/jsx-runtime" {
   }
 }
 
-export const MyShoelaceComponent: FunctionComponent = () => (
-  <section>
-    <sl-card class="card-overview">
-      <img
-        slot="image"
-        src="https://unsplash.com/photos/yMkJtHu2GDI/download?ixid=M3wxMjA3fDB8MXxhbGx8MTQxfHx8fHx8fHwxNzQxNDg5MjIxfA&auto=format&fit=crop&w=500&q=80"
-        alt="Everything you need for a great trip to Yosemite"
-      />
-
-      <strong>Yosemite</strong>
-      <br />
-      The journey is worth the lifetime experience. You are awaited!<br />
-      <small>polaroid not included</small>
-
-      <div slot="footer">
-        <sl-button variant="primary" pill>Book now</sl-button>
-        <sl-rating></sl-rating>
-      </div>
-    </sl-card>
-
-    <style>{css}</style>
-  </section>
+const PHOTOS = (new Array(20)).fill(1).map((_, i) =>
+  `https://picsum.photos/seed/${i + 1}/300/200`
 );
+
+export const MyShoelaceComponent: FunctionComponent = () => {
+  useEffect(() => {
+    let scrolling = false;
+    let scrollAmount = 0;
+
+    const onMouseWheel = (event: WheelEvent) => {
+      event.preventDefault();
+      scrollAmount += event.deltaY;
+      if (!scrolling) {
+        scrolling = true;
+        requestAnimationFrame(updateScroll);
+      }
+    };
+
+    document.addEventListener("wheel", onMouseWheel, { passive: false });
+
+    function updateScroll() {
+      document.documentElement.scrollLeft += scrollAmount;
+      scrollAmount = 0;
+      if (scrollAmount !== 0) {
+        requestAnimationFrame(updateScroll);
+      } else {
+        scrolling = false;
+      }
+    }
+
+    return () => {
+      document.removeEventListener("wheel", onMouseWheel);
+    };
+  }, []);
+
+  return (
+    <>
+      <header>
+        <div>
+          <h1>fullsoak lab</h1>
+          <p>
+            this page is SSR'ed. Here's the{" "}
+            <a href="https://github.com/fullsoak/lab/blob/lab/src/controllers/ShoelaceExampleController.ts">
+              Server code
+            </a>. Here's the{" "}
+            <a href="https://github.com/fullsoak/lab/blob/lab/src/components/MyShoelaceComponent/index.tsx">
+              Client code
+            </a>.
+          </p>
+        </div>
+      </header>
+      <div className="container">
+        <section>
+          {PHOTOS.map((url, i) => (
+            <sl-card key={i} class="card-overview">
+              <img
+                slot="image"
+                src={url}
+                alt={getNameAt(i)}
+              />
+
+              <strong>{getNameAt(i)}</strong>
+              <br />
+              {getDescAt(i)}
+              <br />
+              <small>{get1stPropAt(i)}</small>
+
+              <div slot="footer">
+                <sl-button variant="primary" pill>Try now</sl-button>
+                <sl-rating></sl-rating>
+              </div>
+            </sl-card>
+          ))}
+
+          <style dangerouslySetInnerHTML={{ __html: css }}></style>
+        </section>
+      </div>
+      <footer>
+        <div>
+          <p>Tip: Ctrl+U (Cmd+U on MacOS) to view source</p>
+          <p>
+            Concept of the framework on which this web page is built:{" "}
+            <a href="https://github.com/fullsoak/fullsoak/wiki/Concepts-&-Example-Deployment">
+              https://github.com/fullsoak/fullsoak/wiki/Concepts-&-Example-Deployment
+            </a>
+          </p>
+        </div>
+      </footer>
+    </>
+  );
+};

@@ -5,9 +5,13 @@ html, body {
 }
 
 footer {
-  padding: 1em;
   position: fixed;
   bottom: 0;
   background: white;
   z-index: 1;
+  width: 100vw;
+}
+
+footer div {
+  padding: 1em;
 }
