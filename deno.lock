@@ -39,6 +39,7 @@
     "npm:preact-iso@^2.9.1": "2.9.1_preact@10.26.5_preact-render-to-string@6.5.13__preact@10.26.5",
     "npm:preact-render-to-string@^6.5.13": "6.5.13_preact@10.26.5",
     "npm:preact@10.26.5": "10.26.5",
+    "npm:sass-embedded-linux-x64@1.87.0": "1.87.0",
     "npm:sass-embedded@^1.87.0": "1.87.0",
     "npm:typescript@^5.8.2": "5.8.3",
     "npm:typescript@^5.8.3": "5.8.3",
@@ -620,7 +621,8 @@
       "jsr:@std/testing@^1.0.11",
       "npm:@shoelace-style/shoelace@2.20.1",
       "npm:preact-iso@2.9.1",
-      "npm:preact@10.26.5"
+      "npm:preact@10.26.5",
+      "npm:sass-embedded-linux-x64@1.87.0"
     ]
   }
 }
