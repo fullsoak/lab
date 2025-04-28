@@ -32,6 +32,15 @@ export const MyComponent: FunctionComponent<MyProps> = ({ foo }) => {
             </button>
           </li>
           <li>
+            <a href="/example2">An SSR component using scss</a>
+          </li>
+        </ul>
+      </section>
+      <MyOtherComponent baz={count} />
+      <section style={{ padding: "1rem" }}>
+        <h2>More Advanced Resources</h2>
+        <ul>
+          <li>
             <a href="/app">Route Aware App Component</a>
           </li>
           <li>
@@ -39,7 +48,6 @@ export const MyComponent: FunctionComponent<MyProps> = ({ foo }) => {
           </li>
         </ul>
       </section>
-      <MyOtherComponent baz={count} />
       <footer>
         <div>
           <span>source code of this website:</span>{" "}

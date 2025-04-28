@@ -10,6 +10,7 @@ import { makeHat } from "fullsoak/batteries";
 import { MyComponent } from "./components/MyComponent/index.tsx";
 import { MyRouteAwareComponent } from "./components/MyRouteAwareComponent/index.tsx";
 import { ShoelaceExampleController } from "./controllers/ShoelaceExampleController.ts";
+import { MyScssComponent } from "./components/MyScssComponent/index.tsx";
 
 setupDefaultFullsoakLogger();
 
@@ -20,6 +21,11 @@ class MyController {
   @Get("/")
   simpleExample() {
     return ssr(MyComponent, { foo: "bar" });
+  }
+
+  @Get("/example2")
+  example2() {
+    return ssr(MyScssComponent, { foo: "example 2" });
   }
 
   @Get("/app/:page*")

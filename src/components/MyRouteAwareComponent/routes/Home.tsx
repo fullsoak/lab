@@ -17,6 +17,9 @@ export const Home: FunctionComponent<Props> = ({ foo }) => (
       <li>
         <a href="/app/whatever">Whatever</a>
       </li>
+      {/* <li>
+        <a href="/app/scss-aware-comp">A Component with scss</a>
+      </li> */}
       <li>
         <a href="/">External</a>
       </li>

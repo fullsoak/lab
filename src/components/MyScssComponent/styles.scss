@@ -1,0 +1,31 @@
+@use "../Shared/foo";
+@import "/components/Shared/styles.css";
+
+@mixin my-mixin {
+  text-transform: capitalize;
+}
+
+.div-1 {
+  background-color: rgb(84, 198, 86);
+  height: 100vh;
+  @include my-mixin;
+  @include foo.bar;
+  > span {
+    color: white;
+    padding-left: 1em;
+    margin-bottom: 0.5em;
+    display: block;
+  }
+}
+
+.div-2 {
+  background-color: #F9F9F9;
+  border-radius: 3px;
+  @include my-mixin;
+  @include foo.bar;
+  > a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 2px dotted #999;
+  }
+}

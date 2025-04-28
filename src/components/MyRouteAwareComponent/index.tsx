@@ -15,6 +15,7 @@ import { locationStub } from "preact-iso/prerender";
 // Asynchronous (throws a promise)
 import type { Props as ProfileProps } from "./routes/Profile.tsx";
 import { Media } from "./routes/Media/index.tsx";
+import { MyScssComponent } from "../MyScssComponent/index.tsx";
 const Profile = lazy(() =>
   import("./routes/Profile.tsx").then((cmp) => cmp.Profile)
 );
@@ -41,6 +42,8 @@ export const MyRouteAwareComponent: FunctionComponent<AppProps> = (
             path="/app/profiles/:id"
             component={({ id }) => <Profile id={id} />}
           />
+          {/* @TODO make this work fully */}
+          <Route path="/app/scss-aware-comp" component={MyScssComponent} />
           {/* example: `default` prop indicates a fallback route. Useful for 404 pages */}
           <NotFound default />
         </Router>
