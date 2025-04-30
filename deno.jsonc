@@ -10,8 +10,7 @@
     "superoak": "https://deno.land/x/superoak@4.8.1/mod.ts",
     "@shoelace-style/shoelace": "npm:@shoelace-style/shoelace@2.20.1",
     "react": "npm:preact@10.26.5/compat/",
-    "react-dom": "npm:preact@10.26.5/compat/",
-    "sass-embedded-linux-x64": "npm:sass-embedded-linux-x64@1.87.0" // explicitly for Deno Deploy
+    "react-dom": "npm:preact@10.26.5/compat/"
   },
   // "patch": ["../../fullsoak/"], // enable for local fullsoak development
   "nodeModulesDir": "auto",

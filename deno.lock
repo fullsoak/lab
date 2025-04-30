@@ -1,7 +1,6 @@
 {
   "version": "4",
   "specifiers": {
-    "jsr:@dklab/oak-routing-ctrl@~0.14.2": "0.14.3",
     "jsr:@dklab/oak-routing-ctrl@~0.14.3": "0.14.3",
     "jsr:@fullsoak/fullsoak@0.18.0": "0.18.0",
     "jsr:@oak/commons@1": "1.0.0",
@@ -59,7 +58,7 @@
     "@fullsoak/fullsoak@0.18.0": {
       "integrity": "3a1b1f7275a3169e8715e75ef08b64df98076a0e5278fca5c2a8de45c521e9d1",
       "dependencies": [
-        "jsr:@dklab/oak-routing-ctrl@~0.14.3",
+        "jsr:@dklab/oak-routing-ctrl",
         "jsr:@oak/oak",
         "jsr:@std/log",
         "jsr:@std/path@^1.0.9",
@@ -67,7 +66,6 @@
         "npm:clean-css",
         "npm:htm",
         "npm:preact",
-        "npm:preact-iso@^2.9.1",
         "npm:preact-render-to-string",
         "npm:sass-embedded",
         "npm:typescript@^5.8.3",
@@ -621,8 +619,7 @@
       "jsr:@std/testing@^1.0.11",
       "npm:@shoelace-style/shoelace@2.20.1",
       "npm:preact-iso@2.9.1",
-      "npm:preact@10.26.5",
-      "npm:sass-embedded-linux-x64@1.87.0"
+      "npm:preact@10.26.5"
     ]
   }
 }
