@@ -4,12 +4,20 @@ html, body {
   font-family: monospace;
 }
 
+#fullsoak-htmlshell-main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 footer {
   position: fixed;
   bottom: 0;
   background: white;
   z-index: 1;
   width: 100vw;
+  word-break: break-word;
+  line-break: loose;
 }
 
 footer div {

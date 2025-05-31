@@ -54,7 +54,7 @@ export const MyShoelaceComponent: FunctionComponent = () => {
     document.addEventListener("wheel", onMouseWheel, { passive: false });
 
     function updateScroll() {
-      document.documentElement.scrollLeft += scrollAmount;
+      document.querySelector('div.container')!.scrollLeft += scrollAmount;
       scrollAmount = 0;
       if (scrollAmount !== 0) {
         requestAnimationFrame(updateScroll);
