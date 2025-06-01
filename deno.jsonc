@@ -1,6 +1,6 @@
 {
   "imports": {
-    "fullsoak": "jsr:@fullsoak/fullsoak@0.18.1-alpha.4",
+    "fullsoak": "jsr:@fullsoak/fullsoak@0.18.1-alpha.5",
     // "fullsoak": "../../fullsoak/mod.ts", // enable for local fullsoak development
     // "fullsoak/batteries": "../../fullsoak/mod-batteries.ts", // enable for local fullsoak development
     // "fullsoak/testing": "../../fullsoak/mod-testing.ts", // enable for local fullsoak development

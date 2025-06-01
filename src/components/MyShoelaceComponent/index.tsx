@@ -38,6 +38,8 @@ const PHOTOS = (new Array(20)).fill(1).map((_, i) =>
 );
 
 export const MyShoelaceComponent: FunctionComponent = () => {
+  // @TODO fix preact/hooks useEffect crash and re-enable the block below
+  /*
   useEffect(() => {
     let scrolling = false;
     let scrollAmount = 0;
@@ -67,6 +69,7 @@ export const MyShoelaceComponent: FunctionComponent = () => {
       document.removeEventListener("wheel", onMouseWheel);
     };
   }, []);
+  */
 
   return (
     <>

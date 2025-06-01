@@ -2,7 +2,7 @@
   "version": "5",
   "specifiers": {
     "jsr:@dklab/oak-routing-ctrl@~0.15.1": "0.15.1",
-    "jsr:@fullsoak/fullsoak@0.18.1-alpha.4": "0.18.1-alpha.4",
+    "jsr:@fullsoak/fullsoak@0.18.1-alpha.5": "0.18.1-alpha.5",
     "jsr:@oak/commons@1": "1.0.1",
     "jsr:@oak/oak@^17.1.4": "17.1.4",
     "jsr:@std/assert@1": "1.0.13",
@@ -55,8 +55,8 @@
         "npm:zod"
       ]
     },
-    "@fullsoak/fullsoak@0.18.1-alpha.4": {
-      "integrity": "a0c1c35b1b986ae67e5bd27932b6305ce55ce4b8a7ee5a6b1992e203fedf6143",
+    "@fullsoak/fullsoak@0.18.1-alpha.5": {
+      "integrity": "3271040d461990e1367b11a8558051a2c46afe87c6e229119dec8fe6bcc6253b",
       "dependencies": [
         "jsr:@dklab/oak-routing-ctrl",
         "jsr:@oak/oak",
@@ -65,9 +65,7 @@
         "npm:@swc/core",
         "npm:clean-css",
         "npm:htm",
-        "npm:preact-iso@^2.9.1",
         "npm:preact-render-to-string",
-        "npm:preact@10.26.8",
         "npm:sass-embedded",
         "npm:typescript",
         "npm:uglify-js"
@@ -820,7 +818,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@fullsoak/fullsoak@0.18.1-alpha.4",
+      "jsr:@fullsoak/fullsoak@0.18.1-alpha.5",
       "jsr:@std/testing@^1.0.11",
       "npm:@shoelace-style/shoelace@2.20.1",
       "npm:preact-iso@2.9.1",
