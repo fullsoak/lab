@@ -2,6 +2,9 @@ import type { FunctionComponent } from "preact";
 import type { SlButton, SlCard, SlRating } from "@shoelace-style/shoelace";
 import { get1stPropAt, getDescAt, getNameAt } from "./texts.ts";
 import { useEffect } from "preact/hooks";
+import { getFrameworkVersion } from "fullsoak";
+
+const frameworkVersion = await getFrameworkVersion();
 
 const css = `
   .card-overview {
@@ -119,6 +122,7 @@ export const MyShoelaceComponent: FunctionComponent = () => {
               https://github.com/fullsoak/fullsoak/wiki/Concepts-&-Example-Deployment
             </a>
           </p>
+          <p>Framework version: {frameworkVersion}</p>
         </div>
       </footer>
     </>

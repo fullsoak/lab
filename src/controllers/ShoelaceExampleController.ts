@@ -1,13 +1,16 @@
-import { Controller, Get, ssr } from "fullsoak";
+import { Controller, Get, getFrameworkVersion, ssr } from "fullsoak";
 import { MyShoelaceComponent } from "../components/MyShoelaceComponent/index.tsx";
 import { makeHat } from "fullsoak/batteries";
+
+const frameworkVersion = await getFrameworkVersion();
+console.log("framework version read on server-side:", frameworkVersion);
 
 const headContent = makeHat({
   title: "FullSoak Lab",
   links: [{
     rel: "stylesheet",
     href:
-      "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/themes/light.css",
+      "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css",
   }, {
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=DM%20Mono",
@@ -15,7 +18,7 @@ const headContent = makeHat({
   scripts: [{
     type: "module",
     src:
-      "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.0/cdn/shoelace-autoloader.js",
+      "https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js",
   }],
 });
 

@@ -1,18 +1,18 @@
 {
   "imports": {
-    "fullsoak": "jsr:@fullsoak/fullsoak@0.18.1-alpha.6",
+    "fullsoak": "jsr:@fullsoak/fullsoak@0.18.1",
     // "fullsoak": "../../fullsoak/mod.ts", // enable for local fullsoak development
     // "fullsoak/batteries": "../../fullsoak/mod-batteries.ts", // enable for local fullsoak development
     // "fullsoak/testing": "../../fullsoak/mod-testing.ts", // enable for local fullsoak development
-    "preact": "npm:preact@10.26.5",
-    "preact-iso": "npm:preact-iso@2.9.1",
-    "@std/testing": "jsr:@std/testing@^1.0.11",
+    "preact": "npm:preact@10.27.2",
+    "preact-iso": "npm:preact-iso@2.11.0",
+    "@std/testing": "jsr:@std/testing@^1.0.16",
     "superoak": "https://deno.land/x/superoak@4.8.1/mod.ts",
     "@shoelace-style/shoelace": "npm:@shoelace-style/shoelace@2.20.1",
-    "react": "npm:preact@10.26.5/compat/",
-    "react-dom": "npm:preact@10.26.5/compat/"
+    "react": "npm:preact@10.27.2/compat/",
+    "react-dom": "npm:preact@10.27.2/compat/"
   },
-  // "patch": ["../../fullsoak/"], // enable for local fullsoak development
+  // "links": ["../../fullsoak/"], // enable for local fullsoak development
   "nodeModulesDir": "auto",
   "compilerOptions": {
     "jsx": "precompile", // see https://docs.deno.com/runtime/reference/jsx/#jsx-precompile-transform
